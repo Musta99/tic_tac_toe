@@ -1,0 +1,177 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.title {
+  width: 30%;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  gap: 2%;
+}
+
+.title h1 {
+  text-align: center;
+}
+
+select {
+  background-color: teal;
+  box-shadow: 0px 0px 10px 3px rgba(132, 175, 175, 0.5);
+  padding: 10px;
+  color: white;
+}
+
+.board {
+  height: 60%;
+  width: 30%;
+  background-color: rgb(235, 235, 235);
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  gap: 2%;
+}
+
+.square {
+  font-size: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 98%;
+  box-shadow: 0px 0px 10px 3px rgba(132, 175, 175, 0.5);
+  background-color: teal;
+  color: white;
+  font-weight: bold;
+}
+
+.scoreBoard {
+  width: 30%;
+  height: 6%;
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  gap: 2%;
+}
+.score {
+  background-color: rgb(206, 206, 206);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 3px rgba(132, 175, 175, 0.5);
+  font-weight: bold;
+}
+
+a {
+  color: teal;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  font-size: 18px;
+}
+
+/* Mobile (Phones) */
+@media (max-width: 480px) {
+  .title {
+    width: 45%;
+  }
+  .title h1 {
+    font-size: 10px;
+  }
+  #round {
+    height: 20px;
+  }
+  .board {
+    height: 30%;
+    width: 45%;
+  }
+
+  .square {
+    font-size: 20px;
+    height: 92px;
+  }
+
+  .scoreBoard {
+    width: 45%;
+    height: 3%;
+    font-size: 6px;
+  }
+
+  h4 {
+    font-size: 10px;
+  }
+}
+
+/* Tablet (Portrait) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .title {
+    width: 50%;
+  }
+  .title h1 {
+    font-size: 20px;
+  }
+  #round {
+    height: 25px;
+  }
+  .board {
+    height: 30%;
+    width: 50%;
+  }
+
+  .square {
+    font-size: 20px;
+    height: 92px;
+  }
+
+  .scoreBoard {
+    width: 50%;
+    height: 4%;
+    font-size: 9px;
+  }
+}
+
+/* Tablet (Landscape) */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .title {
+    width: 55%;
+  }
+  .title h1 {
+    font-size: 25px;
+  }
+  #round {
+    height: 40px;
+  }
+  .board {
+    height: 35%;
+    width: 55%;
+  }
+
+  .square {
+    font-size: 20px;
+    height: 145px;
+  }
+
+  .scoreBoard {
+    width: 55%;
+    height: 4%;
+    font-size: 12px;
+  }
+}
